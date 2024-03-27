@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+    <link rel="styleSheet" type="text/css" href="../CSS/Quiz.css">
+    <link rel="styleSheet" type="text/css" href="../CSS/navi_and_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- nav bar  -->
+
+    <div class="headernav">
+        <nav>
+            <div class="logo">
+                <img src="../images/LOG1.png">
+                <span>PIXEL LOUNGE</span>
+            </div>
+            <ul>
+                <li><a href="home_page.html">HOME</a></li>
+                <li><a href="buy_products.html">SHOP</a></li>
+                <li><a href="Quiz.html">QUIZ</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="comment_form.html">COMMENTS</a></li>
+                <li><a href="sitemap.html">SITE MAP</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="body">
+        <!--Welcome Box-->
+        <div id="homeArea" class="startingBox">
+            <h3>Welcome to the Quiz</h3>
+            <br>
+            <p>You have 10 questions for this quiz.<br>You have 2 minutes to complete this quiz.<br>Quiz will start after click start.<br>Good Luck!</p>
+            <button type="button" class="button" onclick="showQuestion1()">Start</button>
+        </div>
+        <div id="q1" class="questionBox" hidden>
+            <!--Question 1-->
+            <h2>Question 01</h2>
+            <br>
+            <p>Which team won the valorant 2022 championship?</p>
+            <input type="radio" class='answer' name="answer1" value="0">Sentinels<br>
+            <input type="radio" class='answer' name="answer1" value="1" id="correct1">Optic Gaming<br>
+            <input type="radio" class='answer' name="answer1" value="2">Paper Rex<br>
+            <input type="radio" class='answer' name="answer1" value="3">Loud<br>
+            <button type="button" class="button" onclick="showQuestion2()">Next</button>
+        </div>
+        <div id="q2" class="questionBox" hidden>
+            <!--Question 2-->
+            <h2>Question 02</h2>
+            <br>
+            <p>What is the most watched tv series on netflix 2022?</p>
+            <input type="radio" class='answer' name="answer2" value="0">Lucifer<br>
+            <input type="radio" class='answer' name="answer2" value="1" id="correct2">Stranger Things<br>
+            <input type="radio" class='answer' name="answer2" value="2">The Flash<br>
+            <input type="radio" class='answer' name="answer2" value="3">Gotham<br>
+            <button type="button" class="button" onclick="showQuestion3()">Next</button>
+        </div>
+        <div id="q3" class="questionBox" hidden>
+            <!--Question 3-->
+            <h2>Question 03</h2>
+            <br>
+            <p>What is the world wide box office ranked movie in 2022?</p>
+            <input type="radio" class='answer' name="answer3" value="0" id="correct3">Avatar: The Way of Water<br>
+            <input type="radio" class='answer' name="answer3" value="1">Jurassic World: Dominion<br>
+            <input type="radio" class='answer' name="answer3" value="2">Doctor Strange in the Multiverse of Madness<br>
+            <input type="radio" class='answer' name="answer3" value="3">Top Gun: Maverick<br>
+            <button type="button" class="button" onclick="showQuestion4()">Next</button>
+        </div>
+        <div id="q4" class="questionBox" hidden>
+            <!--Question 4-->
+            <h2>Question 04</h2>
+            <br>
+            <p>What is the most twitch streamed game in 2022?</p>
+            <input type="radio" class='answer' name="answer4" value="0">Fortnite<br>
+            <input type="radio" class='answer' name="answer4" value="1">Valorant<br>
+            <input type="radio" class='answer' name="answer4" value="2">Halo<br>
+            <input type="radio" class='answer' name="answer4" value="3" id="correct4">Grand Thief Auto V<br>
+            <button type="button" class="button" onclick="showQuestion5()">Next</button>
+        </div>
+        <div id="q5" class="questionBox" hidden>
+            <!--Question 5-->
+            <h2>Question 05</h2>
+            <br>
+            <p>Which TV-Show is based on League Of Legends game?</p>
+            <input type="radio" class='answer' name="answer5" value="0">Arrow<br>
+            <input type="radio" class='answer' name="answer5" value="1">Gotham Knights<br>
+            <input type="radio" class='answer' name="answer5" value="2" id="correct5">Arcane<br>
+            <input type="radio" class='answer' name="answer5" value="3">Jurassic World<br>
+            <button type="button" class="button" onclick="showQuestion6()">Next</button>
+        </div>
+        <div id="q6" class="questionBox" hidden>
+            <!--Question 6-->
+            <h2>Question 06</h2>
+            <br>
+            <p>What is the last Marvel movie in phase 04?</p>
+            <input type="radio" class='answer' name="answer6" value="0" id="correct6">Black Panther: Wakanda Forever<br>
+            <input type="radio" class='answer' name="answer6" value="1">Spider man: No Way Home<br>
+            <input type="radio" class='answer' name="answer6" value="2">Avengers: End Game<br>
+            <input type="radio" class='answer' name="answer6" value="3">Eternals<br>
+            <button type="button" class="button" onclick="showQuestion7()">Next</button>
+        </div>
+        <div id="q7" class="questionBox" hidden>
+            <!--Question 7-->
+            <h2>Question 07</h2>
+            <br>
+            <p>What is the best-selling video game console of all time that sold over 155 million consoles worldwide?</p>
+            <input type="radio" class='answer' name="answer7" value="0">Playstation 01<br>
+            <input type="radio" class='answer' name="answer7" value="1" id="correct7">Playstation 02<br>
+            <input type="radio" class='answer' name="answer7" value="2">Playstation 03<br>
+            <input type="radio" class='answer' name="answer7" value="3">Playstation 04<br>
+            <button type="button" class="button" onclick="showQuestion8()">Next</button>
+        </div>
+        <div id="q8" class="questionBox" hidden>
+            <!--Question 8-->
+            <h2>Question 08</h2>
+            <br>
+            <p>Who is the main character in Gotham TV-Series?</p>
+            <input type="radio" class='answer' name="answer8" value="0">Alfred Pennyworth<br>
+            <input type="radio" class='answer' name="answer8" value="1">Don Falcone<br>
+            <input type="radio" class='answer' name="answer8" value="2">Edward Nygma<br>
+            <input type="radio" class='answer' name="answer8" value="3" id="correct8">Bruce Wayne<br>
+            <button type="button" class="button" onclick="showQuestion9()">Next</button>
+        </div>
+        <div id="q9" class="questionBox" hidden>
+            <!--Question 9-->
+            <h2>Question 09</h2>
+            <br>
+            <p>What is the highest selling X-box game?</p>
+            <input type="radio" class='answer' name="answer9" value="0">Spider man 2<br>
+            <input type="radio" class='answer' name="answer9" value="1">Witcher 2<br>
+            <input type="radio" class='answer' name="answer9" value="2" id="correct9">Halo 2<br>
+            <input type="radio" class='answer' name="answer9" value="3">Grand Thief Auto 2<br>
+            <button type="button" class="button" onclick="showQuestion10()">Next</button>
+        </div>
+        <div id="q10" class="questionBox" hidden>
+            <!--Question 10-->
+            <h2>Question 10</h2>
+            <br>
+            <p>what is the BatmanVsSuperman movie aired year?</p>
+            <input type="radio" class='answer' name="answer10" value="0">2009<br>
+            <input type="radio" class='answer' name="answer10" value="1" id="correct10">2016<br>
+            <input type="radio" class='answer' name="answer10" value="2">2013<br>
+            <input type="radio" class='answer' name="answer10" value="3">2020<br>
+            <button type="button" class="button" onclick="showResults()">Submit</button>
+        </div>
+        <!-- Results Area-->
+        <div id="resultArea" class="resultBox" hidden>
+            <h1 class="results">Results</h1>
+            <p class="total" id="total"></p>
+            <p class="State" id="state"></p>
+            <p class="time" id="time"></p>
+            <table>
+                <tr>
+                    <th>Question Number</th>
+                    <th>Correct Answers</th>
+                    <th>Your Answer</th>
+                </tr>
+                <tr>
+                    <td>Question 01</td>
+                    <td>2</td>
+                    <td id="qu01"></td>
+                </tr>
+                <tr>
+                    <td>Question 02</td>
+                    <td>2</td>
+                    <td id="qu02"></td>
+                </tr>
+                <tr>
+                    <td>Question 03</td>
+                    <td>1</td>
+                    <td id="qu03"></td>
+                </tr>
+                <tr>
+                    <td>Question 04</td>
+                    <td>4</td>
+                    <td id="qu04"></td>
+                </tr>
+                <tr>
+                    <td>Question 05</td>
+                    <td>3</td>
+                    <td id="qu05"></td>
+                </tr>
+                <tr>
+                    <td>Question 06</td>
+                    <td>1</td>
+                    <td id="qu06"></td>
+                </tr>
+                <tr>
+                    <td>Question 07</td>
+                    <td>2</td>
+                    <td id="qu07"></td>
+                </tr>
+                <tr>
+                    <td>Question 08</td>
+                    <td>4</td>
+                    <td id="qu08"></td>
+                </tr>
+                <tr>
+                    <td>Question 09</td>
+                    <td>3</td>
+                    <td id="qu09"></td>
+                </tr>
+                <tr>
+                    <td>Question 10</td>
+                    <td>2</td>
+                    <td id="qu10"></td>
+                </tr>
+            </table>
+            <button type="button" class="button" onclick="homeArea()">Try Again</button>
+        </div>
+    </div>
+    </br>
+    <section class="footer">
+        <div class="logof ">
+            <img src="../images\LOG1.png">
+            <span>PIXEL LOUNGE</span>
+        </div>
+        <p>419, 1, Ramakrishna Road, Wellawatte,Colombo 06, Sri Lanka. | Phone: +94 5687994 | Email:pixellounge@gmail.com</p>
+        <p>Pixel Lounge © 2023 All Rights Reserved</p>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="credits">
+                <p>The Creator:&nbsp;</p>
+                <a href="stu3_page_editor.html">Sandaru Hansana</a>
+            </div>
+    </section>
+    <script>
+        let marks = 0;
+
+        function timer() {
+            var setTimer = setInterval(showResults, 60000);
+        }
+
+        function showQuestion1() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = false;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            timer()
+        }
+
+        function showQuestion2() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = false;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct1")
+            if (get.checked == true) {
+                document.getElementById("qu01").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu01").innerHTML = "Incorrect";
+            }
+        }
+
+        function showQuestion3() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = false;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct2")
+            if (get.checked == true) {
+                document.getElementById("qu02").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu02").innerHTML = "Incorrect";
+            }
+
+        }
+
+        function showQuestion4() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = false;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct3")
+            if (get.checked == true) {
+                document.getElementById("qu03").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu03").innerHTML = "Incorrect";
+            }
+
+        }
+
+        function showQuestion5() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = false;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct4")
+            if (get.checked == true) {
+                document.getElementById("qu04").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu04").innerHTML = "Incorrect";
+            }
+
+
+        }
+
+        function showQuestion6() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = false;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct5")
+            if (get.checked == true) {
+                document.getElementById("qu05").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu05").innerHTML = "Incorrect";
+            }
+
+        }
+
+        function showQuestion7() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = false;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct6");
+            if (get.checked == true) {
+                document.getElementById("qu06").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu06").innerHTML = "Incorrect";
+            }
+
+        }
+
+        function showQuestion8() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = false;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct7")
+            if (get.checked == true) {
+                document.getElementById("qu07").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu07").innerHTML = "Incorrect";
+            }
+
+        }
+
+        function showQuestion9() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = false;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct8")
+            if (get.checked == true) {
+                document.getElementById("qu08").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu08").innerHTML = "Incorrect";
+            }
+
+        }
+
+        function showQuestion10() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = false;
+            var homeBox = document.getElementById("resultArea").hidden = true;
+
+            get = document.getElementById("correct9")
+            if (get.checked == true) {
+                document.getElementById("qu09").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu09").innerHTML = "Incorrect";
+            }
+
+        }
+
+        function showResults() {
+            var homeBox = document.getElementById("homeArea").hidden = true;
+            var homeBox = document.getElementById("q1").hidden = true;
+            var homeBox = document.getElementById("q2").hidden = true;
+            var homeBox = document.getElementById("q3").hidden = true;
+            var homeBox = document.getElementById("q4").hidden = true;
+            var homeBox = document.getElementById("q5").hidden = true;
+            var homeBox = document.getElementById("q6").hidden = true;
+            var homeBox = document.getElementById("q7").hidden = true;
+            var homeBox = document.getElementById("q8").hidden = true;
+            var homeBox = document.getElementById("q9").hidden = true;
+            var homeBox = document.getElementById("q10").hidden = true;
+            var homeBox = document.getElementById("resultArea").hidden = false;
+
+            get = document.getElementById("correct10")
+            if (get.checked == true) {
+                document.getElementById("qu10").innerHTML = "Correct";
+                marks++;
+            } else {
+                document.getElementById("qu10").innerHTML = "Incorrect";
+            }
+
+
+            document.getElementById("total").innerHTML = "Your score is " + marks;
+
+            if (marks <= 4) {
+                document.body.style.backgroundColor = "#ff0000";
+                document.getElementById("state").innerHTML = "Not quite Good ";
+            } else if (marks > 7) {
+                document.body.style.backgroundColor = "#00ff00";
+                document.getElementById("state").innerHTML = "Great ";
+            }
+        }
+
+        function homeArea() {
+            location.reload()
+        }
+    </script>
+</body>
+
+</html>

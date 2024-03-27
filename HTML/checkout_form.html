@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="Stylesheet" href="../CSS/navi_and_footer.css">
+    <link rel="Stylesheet" href="../CSS/checkout_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../JS/checkout_from.js" async></script>
+</head>
+
+<body>
+    <div class="headernav">
+        <nav>
+            <div class="logo">
+                <img src="../images/LOG1.png">
+                <span>PIXEL LOUNGE</span>
+            </div>
+            <ul>
+                <li><a href="home_page.html">HOME</a></li>
+                <li><a href="buy_products.html">SHOP</a></li>
+                <li><a href="Quiz.html">QUIZ</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="comment_form.html">COMMENTS</a></li>
+                <li><a href="sitemap.html">SITE MAP</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="form_background">
+        <form name="Checkout Form" action="mailto:pixellounge@gmail.com" method="post">
+            <fieldset id="order_info">
+                <h3>Order Information</h3>
+                <table>
+                    <tr>
+                        <td>Reference Number</td>
+                        <td>:</td>
+                        <td>4815644416451651</td>
+                    </tr>
+                    <tr>
+                        <td>Description </td>
+                        <td>:</td>
+                        <td>Make Payment</td>
+                    </tr>
+                    <tr>
+                        <td>Amount</td>
+                        <td>:</td>
+                        <td id="display_total"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset id="credit_card_details">
+                <h3>Payment Details</h3>
+                <div class="together">
+                    <p class="important">*&nbsp;</p>
+                    <p class="msg" id="required">indicates a required field</p>
+                </div>
+
+                <div class="subsection">
+
+                    <div>
+                        <div class="together">
+                            <label for="cardnum">Card Number</label>
+                            <p class="important">&nbsp;*</p>
+                        </div>
+                        <input type="tel" name="cardnum" id="cardnum" placeholder="xxxx xxxx xxxx xxxx" maxlength="16" required>
+                        <br>
+                        <br>
+                        <div class="together">
+                            <label for="ex_date">Expiry Date</label>
+                            <p class="important">&nbsp;*</p>
+                        </div>
+                        <input type="month" class="ex_date" id="ex_month" min="2023-03" max="2028-12" required>
+                    </div>
+
+                    <div>
+                        <div class="together">
+                            <label for="cardname">Cardholder's Name</label>
+                            <p class="important">&nbsp;*</p>
+                        </div>
+                        <input type="text" name="cardname" id="cardname" required>
+                        <br>
+                        <br>
+                        <div class="together">
+                            <label for="security">Security Code</label>
+                            <p class="important">&nbsp;*</p>
+                        </div>
+                        <div class="together" id="code">
+                            <input type="number" class="code" id="sec_code" name="security" placeholder="123" required>
+                            <img src="../images/card.jpg" id="card_image">
+                            <p>The Last 3 digits on the back of your card</p>
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset id="billing">
+                <div class="together">
+                    <h3>Billing Address</h3>
+                    <button type="button" id="edit_address">Edit</button>
+                </div>
+
+                <section id="billing_address_form">
+                    <table>
+                        <tr>
+                            <td><label for="address1">Address 1</label></td>
+                            <td>
+                                <p class="important">&nbsp;*</p>
+                            </td>
+                            <td><input type="text" name="address1" id="address1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address2">Address 2</label></td>
+                            <td></td>
+                            <td><input type="text" name="address2" id="address2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address3">Address 3</label></td>
+                            <td></td>
+                            <td><input type="text" name="address3" id="address3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="town">Town/City</label></td>
+                            <td>
+                                <p class="important">&nbsp;*</p>
+                            </td>
+                            <td><input type="text" name="town" id="town" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="state">State/Reigon</label></td>
+                            <td></td>
+                            <td><input type="text" name="state" id="state"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="zip">Post/ZIP Code</label></td>
+                            <td>
+                                <p class="important">&nbsp;*</p>
+                            </td>
+                            <td><input type="number" name="zip" id="zip" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="country">Country</label></td>
+                            <td>
+                                <p class="important">&nbsp;*</p>
+                            </td>
+                            <td>
+                                <select id="country" name="country" required>
+                                        <option value="Austrailia">Austrailia</option>
+                                        <option value="India">India</option>
+                                        <option value="Sri Lanka" selected>Sri Lanka</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States of America">United States of America</option>
+                                    </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="submit_reset_btn_div">
+                        <button type="button" id="bill_reset" class="reset_btn">Cancel Changes</button>
+                        <button type="button" id="bill_submit" class="submit_btn">Save Changes</button>
+                    </div>
+
+                </section>
+
+                <div class="display_info" id="display_address">
+                    <p class="important">Please fill this required field</p>
+                    <p></p>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="contact">
+                <div class="together">
+                    <h3>Contact Details</h3>
+                    <button type="button" id="edit_contact">Edit</button>
+                </div>
+
+                <section id="contact_details_form">
+                    <table>
+                        <tr>
+                            <td><label for="phone">Phone Number</label></td>
+                            <td></td>
+                            <td><input type="tel" name="phone" id="phone"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email Address</label></td>
+                            <td>
+                                <p class="important">&nbsp;*</p>
+                            </td>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                    </table>
+
+                    <div class="submit_reset_btn_div">
+                        <button type="button" id="contact_reset" class="reset_btn">Cancel Changes</button>
+                        <button type="button" id="contact_submit" class="submit_btn">Save Changes</button>
+                    </div>
+
+                </section>
+
+                <div class="display_info" id="display_email">
+                    <p class="important">Please fill this required field</p>
+                    <p></p>
+                </div>
+                <hr>
+                <div class="submit_reset_btn_div">
+                    <button type="reset" class="reset_btn" id="clear_all">Clear Details</button>
+                    <button type="submit" class="submit_btn" id="make_payment" disabled>Make Payment</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <!-- footer -->
+
+
+    <section class="footer">
+        <div class="logof ">
+            <img src="../images/LOG1.png">
+            <span>PIXEL LOUNGE</span>
+        </div>
+        <p>419, 1, Ramakrishna Road, Wellawatte,Colombo 06, Sri Lanka. | Phone: +94 5687994 | Email:pixellounge@gmail.com</p>
+        <p>Pixel Lounge © 2023 All Rights Reserved</p>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="credits">
+            <p>The Creator:&nbsp;</p>
+            <a href="stu1_page_editor.html">Kavith Fernando</a>
+        </div>
+    </section>
+</body>
+
+</html>

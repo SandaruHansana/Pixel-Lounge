@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap');
+.headernav {
+    background-size: cover;
+    background-color: rgb(26, 26, 46);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav,
+.footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+    padding-left: 0%;
+    padding-right: 0%;
+    transition: 0.5s;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(238, 235, 235);
+    font-size: 26px;
+    padding-left: 8%;
+}
+
+nav .logo img {
+    height: 35PX;
+    width: auto;
+}
+
+nav ul {
+    padding-right: 5%;
+}
+
+nav ul li {
+    display: inline;
+    /* list-style: bold; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+    font-weight: 500;
+}
+
+nav:hover {
+    background-color: rgb(211, 211, 228);
+}
+
+nav:hover .logo {
+    color: rgb(14, 14, 14);
+}
+
+nav:hover ul li a {
+    color: rgb(7, 5, 5);
+}
+
+ul li a {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+ul li a:hover {
+    background-color: rgb(206, 157, 22);
+}
+
+
+/* footer css */
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0;
+    background-color: rgb(54, 48, 48);
+    text-align: center;
+}
+
+.footer h1 {
+    color: #edeff1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+.footer-col {
+    color: #f5f3f3;
+    font-family: fantasy;
+    font-size: 15px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(130, 127, 127, 0.2);
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #d4d1d1;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #f4f5f6;
+    background-color: #f5f3f3;
+}
+
+.logof {
+    font-weight: 600;
+    color: rgb(241, 237, 237);
+    font-size: 26px;
+}
+
+.logof img {
+    height: 30PX;
+    width: auto;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.credits {
+    margin-top: 30px;
+}
+
+.credits a {
+    color: rgb(160, 160, 255);
+}
+
+.credits p,
+a {
+    display: inline;
+}

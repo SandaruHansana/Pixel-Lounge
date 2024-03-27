@@ -1,0 +1,122 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(26, 26, 46);
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+#homeArea h3,
+p,
+button {
+    display: block;
+}
+
+.startingBox {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 100px;
+    border-radius: 40px;
+    background-color: lightblue;
+}
+
+.startingBox h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    /* line-height: 25px; */
+    text-align: center;
+}
+
+.startingBox p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* line-height: 22px; */
+    text-align: center;
+}
+
+.startingBox .button {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.questionBox {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 100px;
+    border-radius: 40px;
+    background-color: lightblue;
+}
+
+.questionBox p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.questionBox .button {
+    margin-top: 50px;
+}
+
+.resultBox {
+    max-width: 700px;
+    background-color: lightblue;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resultBox .results {
+    margin-left: 0px;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1167b1;
+}
+
+.resultBox table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.resultBox table th,
+.resultBox table td {
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.resultBox .total {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.button {
+    padding: 16px 47px;
+    background-color: rgb(0, 0, 127);
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgb(35, 35, 203);
+}

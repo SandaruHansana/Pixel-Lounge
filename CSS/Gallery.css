@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headernav {
+    width: 100%;
+    height: 100vh;
+    background-image: url("student2 images/d563172cc2284c0bbfe05a5de50bf0bb.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+    transition: 1s;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(238, 235, 235);
+    font-size: 26px;
+}
+
+nav .logo img {
+    height: 35PX;
+    width: auto;
+    margin-right: 2px;
+}
+
+nav ul li {
+    display: inline;
+    list-style: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+    font-weight: 500;
+}
+
+nav:hover {
+    background-color: rgb(141, 141, 133);
+}
+
+nav:hover .logo {
+    color: rgb(14, 14, 14);
+}
+
+nav:hover ul li a {
+    color: rgb(7, 5, 5);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.container .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 70px;
+}
+
+.container .buttons .btn {
+    padding: 0 10px;
+    display: inline-flex;
+    background-color: #ddd;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container .buttons .btn.active {
+    background: #444;
+}
+
+.container .buttons .btn:nth-child(2) {
+    font-size: 1.5em;
+}
+
+.container .buttons .btn:nth-child(3) {
+    font-size: 2em;
+}
+
+.container.content {
+    font-size: 1em;
+    color: #fff;
+}
+
+.container .content h2,
+.container.content p {
+    transition: 0.5s;
+    color: #444;
+}
+
+.colorscheme {
+    border: 2px solid #333;
+    float: right;
+    position: relative;
+    top: 50px;
+}
+
+.color {
+    display: table-cell;
+    width: 25px;
+    height: 25px;
+    margin: 0 1px;
+    cursor: pointer;
+    border: 2px solid #FFF;
+}
+
+.clr1 {
+    background-color: #fff;
+}
+
+.clr2 {
+    background-color: darkgrey;
+}
+
+.clr3 {
+    background-color: cadetblue;
+}
+
+.container .box img {
+    width: 280px;
+    height: 280px;
+}
+
+.container {
+    width: 100%;
+    min-height: 500px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img {
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img {
+    transform: scale(1.2);
+}
+
+.container .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.527);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .details {
+    transform: scaleY(1);
+}
+
+.container .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .details .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+
+.container .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: rgb(54, 48, 48);
+    text-align: center;
+}
+
+.footer h1 {
+    color: #edeff1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+.footer-col {
+    color: #f5f3f3;
+    font-family: fantasy;
+    font-size: 15px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(130, 127, 127, 0.2);
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #d4d1d1;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #f4f5f6;
+    background-color: #f5f3f3;
+}
+
+.logof {
+    font-weight: 600;
+    color: rgb(241, 237, 237);
+    font-size: 26px;
+}
+
+.logof img {
+    height: 30PX;
+    width: auto;
+    align-items: center;
+    margin-right: 2px;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(26, 26, 40);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* feedback css */
+
+.feedback {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+form input,
+form textarea {
+    background: #dcdede;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background: #08c418;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}

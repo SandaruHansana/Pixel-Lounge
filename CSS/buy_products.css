@@ -1,0 +1,325 @@
+body {
+    background-color: rgb(26, 26, 46);
+}
+
+
+/* ----------------------Welcome page---------------------- */
+
+.background {
+    background-image: url('../images/Shopping2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    height: 90vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background h1 {
+    font-size: 35pt;
+}
+
+.background p {
+    font-size: 18pt;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.background button {
+    margin-top: 10%;
+    padding: 20px 30px;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 15pt;
+    font-weight: bold;
+    border-width: 3px;
+    border-style: solid;
+    border-color: yellow;
+}
+
+.background button:hover {
+    background-image: linear-gradient(to right top, #e3e239, #ffbe32, #ff9949, #ff7767, #ff5f86);
+    cursor: pointer;
+}
+
+
+/* --------------------------------------------------------- */
+
+
+/* ----------------------Shopping Page---------------------- */
+
+.shop_title {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 255, 213);
+    width: 50%;
+    padding: 1%;
+    border-radius: 50px;
+    background-image: linear-gradient(to right bottom, #751433, #871339, #99123f, #ab0f44, #be0a49, #bf0d4a, #c1104c, #c2134d, #b11a4a, #a11f47, #912244, #812440);
+}
+
+
+/* ----------------------Content display---------------------- */
+
+.content {
+    padding-bottom: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_holder {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    margin-left: 3%;
+}
+
+.card_holder .cards img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.cards {
+    background-color: rgb(211, 211, 228);
+    margin: 4%;
+    padding: 4%;
+    box-shadow: 0 10px 10px rgba(169, 169, 255, 0.396);
+}
+
+.cards:hover {
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(255, 176, 4);
+    border-radius: 10px;
+}
+
+
+/* ----------------------Card content---------------------- */
+
+.description {
+    font-size: 13pt;
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(54, 54, 54);
+}
+
+.price {
+    margin-top: 6%;
+    margin-bottom: 8%;
+    font-size: 22pt;
+    color: #fb4774;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    margin: 4%;
+}
+
+.buttons button {
+    font-size: 12pt;
+    padding: 3% 6% 3% 6%;
+    border-style: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to right top, #980634, #9f0738, #a6073c, #ad0840, #b40944, #b40844, #b40843, #b40743, #ad053e, #a6033a, #9f0135, #980031);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 245, 172);
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    background-image: none;
+    background-color: #db1e60;
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* ------------------------------------------------------ */
+
+
+/* ----------------------Shopping Cart---------------------- */
+
+.cart {
+    display: grid;
+    grid-template-rows: auto, 700px, auto, auto;
+    width: 410px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    float: right;
+    margin-right: 3%;
+    margin-top: -760px;
+    border-color: rgb(255, 176, 4);
+    border-width: 7px;
+    border-style: solid;
+}
+
+
+/* ----------------------Cart content---------------------- */
+
+.cart h2 {
+    width: 97%;
+    color: rgb(50, 50, 50);
+    text-align: center;
+    padding: 3%;
+    background-image: linear-gradient(to right top, #e3e239, #ffbe32, #ff9949, #ff7767, #ff5f86);
+}
+
+
+/* ----------------------Hidden card holder content---------------------- */
+
+.hidden_card_holder {
+    min-height: 330px;
+    display: grid;
+    grid-template-columns: repeat(1, 410px);
+}
+
+
+/* ----------------------Hidden Card content---------------------- */
+
+.hidden_cards {
+    display: grid;
+    grid-template-columns: 74px 110px 65px 1fr;
+    width: 94%;
+    height: 70px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 233, 233);
+    box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.item_name,
+.image,
+.other,
+.price_tag {
+    display: flex;
+    text-align: center;
+    font-size: 11pt;
+    align-items: center;
+    justify-content: center;
+    color: rgb(50, 50, 50);
+}
+
+.item_name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.price_tag {
+    color: #fb4774;
+    font-weight: bold;
+}
+
+.other {
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.other input {
+    text-align: right;
+    width: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 12pt;
+}
+
+.remove {
+    padding: 3% 6% 3% 6%;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 245, 172);
+    background-color: #cb0047;
+}
+
+.remove:hover {
+    cursor: pointer;
+    background-image: none;
+    background-color: #d61156;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* ----------------------Display total---------------------- */
+
+.show_total {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.total_price h3 {
+    justify-content: space-around;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 3%;
+}
+
+
+/* --------------------------------------------------------- */
+
+
+/* ----------------------Checkout buttons---------------------- */
+
+#cart_btns {
+    display: none;
+    grid-template-columns: 200px 200px;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    background-color: #faab00;
+    max-height: 50px;
+}
+
+#cart_btns button {
+    width: 100%;
+    margin: 1%;
+    padding: 3% 6%;
+    border-radius: 10px;
+    border: none;
+    font-size: 12pt;
+}
+
+#cart_btns a button {
+    width: 100%;
+    margin: 1%;
+    padding: 3% 6%;
+    border-radius: 10px;
+    border: none;
+    font-size: 12pt;
+}
+
+#empty:hover {
+    background: rgb(220, 0, 73);
+    color: white;
+}
+
+#checkout:hover {
+    background-color: rgb(0, 161, 0);
+    color: white;
+}
+
+
+/* ------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */

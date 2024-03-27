@@ -1,0 +1,223 @@
+body {
+    background-color: rgb(26, 26, 46);
+}
+
+.form_background {
+    width: 80%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+fieldset {
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 228);
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 0.5% 2% 3% 2%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset h3 {
+    line-height: 32pt;
+}
+
+#order_info table {
+    width: 50%;
+}
+
+#order_info table tr td {
+    width: 20px;
+    line-height: 20pt;
+}
+
+.important {
+    /* margin-top: -0.5%; */
+    font-size: 13pt;
+    font-style: italic;
+    color: rgb(224, 0, 0);
+}
+
+.msg {
+    font-size: 10pt;
+    color: rgb(0, 0, 0);
+}
+
+.together {
+    display: flex;
+    align-items: center;
+}
+
+.subsection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    height: 38px;
+    font-size: 12pt;
+    padding: 0% 1% 0% 1%;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    border-color: rgb(255, 196, 33);
+    border-style: solid;
+    width: 50%;
+}
+
+#ex_month {
+    width: 30%;
+}
+
+.code {
+    width: 65px;
+    height: 38px;
+}
+
+#code {
+    justify-content: space-between;
+    width: 90%;
+}
+
+#card_image {
+    height: 40px;
+    width: auto;
+}
+
+#billing_address_form,
+#contact_details_form {
+    display: none;
+}
+
+#billing_address_form input,
+select {
+    height: 28px;
+    width: 400px;
+    min-width: 100px;
+    font-size: 12pt;
+    padding: 0% 1% 0% 1%;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    border-color: rgb(255, 196, 33);
+    border-style: solid;
+    margin-left: 40%;
+}
+
+#billing_address_form select {
+    height: 30px;
+    width: 413px;
+    font-size: 12pt;
+    padding: 0% 1% 0% 1%;
+    letter-spacing: 1px;
+    border-width: 2px;
+    margin-left: 40%;
+}
+
+#billing_address_form table tr td {
+    line-height: 20pt;
+    padding-bottom: 4%;
+}
+
+#billing_address_form table {
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.submit_reset_btn_div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.submit_btn,
+.reset_btn {
+    padding: 1%;
+    width: 150px;
+    border-radius: 30px;
+    border: solid rgb(203, 156, 26);
+    border-width: 2px
+}
+
+.submit_btn:enabled {
+    background-color: rgb(203, 156, 26);
+    color: white;
+}
+
+.submit_btn:enabled:hover {
+    background-color: rgb(255, 187, 0);
+}
+
+.reset_btn:hover {
+    background-color: #ffdfea;
+}
+
+.display_info {
+    display: block;
+    margin: 1% 0;
+    padding: 1%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#edit_address,
+#edit_contact {
+    position: relative;
+    float: right;
+    margin-left: 78%;
+    /* margin-top: -2.5%; */
+    padding: 4px 30px;
+    border-width: 1px;
+    /* border: 0; */
+    /* background-color: transparent; */
+}
+
+#edit_address:hover,
+#edit_contact:hover {
+    border-width: 2px;
+}
+
+#contact_details_form input {
+    height: 28px;
+    width: 400px;
+    min-width: 100px;
+    font-size: 12pt;
+    padding: 0% 1% 0% 1%;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    border-color: rgb(255, 196, 33);
+    border-style: solid;
+    margin-left: 40%;
+}
+
+#contact_details_form table tr td {
+    line-height: 20pt;
+    padding-bottom: 4%;
+}
+
+#contact_details_form table {
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+hr {
+    border-width: 4px;
+    border: solid;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#make_payment {
+    opacity: 0.7;
+}

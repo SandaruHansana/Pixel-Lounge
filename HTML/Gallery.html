@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../CSS/Gallery.css">
+    <link rel="stylesheet" href="../CSS/navi_and_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="../images/LOG1.png">
+                <span>PIXEL LOUNGE</span>
+            </div>
+            <ul>
+                <li><a href="home_page.html">HOME</a></li>
+                <li><a href="buy_products.html">SHOP</a></li>
+                <li><a href="Quiz.html">QUIZ</a></li>
+                <li><a href="comment_form.html">COMMENTS</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="sitemap.html">SITE MAP</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="colorscheme">
+            <span id='1' onclick="color(this)" class='color clr1'></span>
+            <span id='2' onclick="color(this)" class='color clr2'></span>
+            <span onclick="color(this)" class='color clr3'></span>
+        </div>
+        <script>
+            function color(z) {
+                var a = getComputedStyle(z);
+                var b = a.backgroundColor;
+                document.getElementsByTagName("BODY")[0].style.backgroundColor = b;
+            }
+        </script>
+        <div class="container">
+
+            <div class="buttons">
+                <span class="btn active" onclick="document.getElementById('text').style.fontSize='1em'">A</span>
+                <span class="btn" onclick="document.getElementById('text').style.fontSize='1.25em'">A</span>
+                <span class="btn" onclick="document.getElementById('text').style.fontSize='1.75em'">A</span>
+            </div>
+
+            <div class="content" id="text">
+                <h1><u><center>Top Movies and Top Games Of The Year<br>2020 - 2023</center></u></h1>
+                <div class="wrap">
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNjViNWRjYWEtZTI0NC00N2E3LTk0NGQtMjY4NTM3OGNkZjY0XkEyXkFqcGdeQXVyMjUxMTY3ODM@._V1_.jpg">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2020 - Hamilton</h1>
+                                <p>Director: Thomas Kail <br>The real life of one of America's foremost founding fathers and first Secretary of the Treasury, Alexander Hamilton. Captured live on Broadway from the Richard Rodgers Theater with the original
+                                    Broadway cast.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://images.moviesanywhere.com/5a7e82e7749d6dd8e447fcfeec50c064/55462afc-41ad-4322-ad46-1caca29fcc36.jpg">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2021 - Spider-Man: No Way Home</h1>
+                                <p>Director: Jon Watts <br>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means
+                                    to be Spider-Man.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZWYzOGEwNTgtNWU3NS00ZTQ0LWJkODUtMmVhMjIwMjA1ZmQwXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2022 - Top Gun: Maverick</h1>
+                                <p>Director: Joseph Kosinski <br>After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the
+                                    ultimate sacrifice from those chosen to fly it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNzNlYzRkNWUtMWJlYS00NjdiLTgyYzQtZjZhYThmMWNhZWExXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2023 - Transformers: Rise of the Beasts</h1>
+                                <p>Director: Steven Caple Jr. <br>Plot unknown. Reportedly based on the 'Transformers' spinoff 'Beast Wars' which feature robots that transform into robotic animals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://cdn.mos.cms.futurecdn.net/UXW2mqtCdE2kj33kqyFb7C-970-80.jpg.webp">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2020 - Teardown</h1>
+                                <p>Developer: Tuxedo Labs<br> Format: PC (Steam early access)<br>A first-person heist game where you play with physics as a one-person demolitions team instead of a stealthy cat burglar.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://cdn.mos.cms.futurecdn.net/9ZCQp9hGpS2zz4Ki42RoVd-970-80.jpg.webp">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2021 -Far Cry 6 </h1>
+                                <p>Developer: Ubisoft Toronto<br>Format: PC, PS5, PS4, Xbox One, Xbox Series X<br>An open world chaos simulator where you shoot, drive and fly across an island to free the bits you don't destroy.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://cdn.mos.cms.futurecdn.net/ZYaQ6jwLzavqfWTRGUJb3W-970-80.jpg.webp">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2022 - God of War Ragnarok</h1>
+                                <p>Developer: Sony Santa Monica Studio<br>Platform(s): PS5, PS4<br>The highly-anticipated sequel to the 2018 God of War reboot, continuing the journey of Kratos and Atreus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="https://cdn.mos.cms.futurecdn.net/X6G6WLUPccycTuB9jRyTP3-970-80.jpg.webp">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <h1>2023 - Counter-Strike 2</h1>
+                                <p>Platform(s): PC<br>Value officially announced that a follow-up to its hit FPS is on the way, and that it will be available as a free upgrade to CS:GO. Set to introduce a variety of new and improve features, Counter-Strike
+                                    2 will include smoke grenades that interact with the environment and react to elements such as lighting, explosions, and gunfire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="footer">
+                <div class="logof ">
+                    <img src="../images/LOG1.png">
+                    <span>PIXEL LOUNGE</span>
+                </div>
+                <p>419, 1, Ramakrishna Road, Wellawatte,Colombo 06, Sri Lanka. | Phone: +94 5687994 | Email:pixellounge@gmail.com</p>
+                <p>Pixel Lounge © 2023 All Rights Reserved</p>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="credits">
+                    <p>The Creator:&nbsp;</p>
+                    <a href="stu4_page_editor.html">Vinuji Vidusini</a>
+                </div>
+            </section>
+</body>
+
+</html>
